@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;800&family=Poppins&display=swap");
+    </style>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .nav-link {
+          color: #caf4e0;
+          cursor: pointer;
+          font-weight: 700;
+          font-family: Figtree, sans-serif;
+        }
+
+        .nav-link:hover {
+          color: white;
+        }
+
+        .font-primary {
+          font-family: Figtree, sans-serif;
+        }
+
+        .logo-container > img {
+          height: 120px;
+        }
+        .heading-text {
+          color: #06022b;
+        }
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Assignment Submission</title>
+  </head>
+  <body class="bg-[#f9f9fc] text-[#4d4d66]">
+    <header class="bg-[#4230DD] top-0 sticky z-50" id="navbar-wrapper">
+      <nav
+        class="p-3 pb-20 md:p-10 max-w-7xl mx-auto flex items-center justify-between"
+        id="navbar"
+      >
+        <img
+          src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/5e73b9a76a448d16c1d65d34_logo_white.svg"
+          alt=""
+          class="h-5 md:h-8 object-contain lg:h-full"
+        />
+
+        <ul
+          class="hidden lg:flex text-[#caf4e0] items-center font-semibold gap-x-8"
+        >
+          <li class="nav-link">HOW IT WORKS</li>
+          <li class="nav-link">LOCATIONS</li>
+          <li
+            class="relative flex items-center gap-x-6 cursor-pointer"
+            id="about-menu-toggle"
+          >
+            <a href="#" class="nav-link"> ABOUT </a>
+            <span class="material-icons hover:text-white"> expand_more </span>
+            <div
+              class="bg-[#4230dd] absolute top-10 w-full hidden flex-col gap-y-6 text-[#caf4e0] font-primary text-sm font-extrabold"
+              id="drop-down-menu"
+            >
+              <a href="#" class="hover:text-white block w-full">OUR STORY</a>
+              <a href="#" class="hover:text-white block">FOOD WASTE</a>
+              <a href="#" class="hover:text-white block">THE TEAM</a>
+              <a href="#" class="hover:text-white block">PRESS ROOM</a>
+              <a href="#" class="hover:text-white block">IMPACT REPORT</a>
+            </div>
+          </li>
+          <li class="nav-link">SUPPORT</li>
+          <li class="nav-link">PARTNER</li>
+          <li>
+            <button
+              type="button"
+              class="py-5 px-8 rounded-lg text-[#4230dd] bg-[#caf4e0] shadow-primary hover:shadow-none transition-shadow"
+            >
+              DOWNLOAD
+            </button>
+          </li>
+        </ul>
+
+        <div class="flex lg:hidden items-center gap-x-4">
+          <button
+            class="text-[13px] py-2 px-4 uppercase rounded-md text-[#1c1279] font-bold bg-[#caf4e0]"
+          >
+            Download
+          </button>
+
+          <div class="flex flex-col items-center gap-y-[3px]">
+            <span class="block bg-white h-[3px] w-4"></span>
+            <span class="block bg-white h-[3px] w-4"></span>
+            <span class="block bg-white h-[3px] w-4"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      class="bg-[url(https://assets-global.website-files.com/5e4482baa13a1926b23e2187/622689da4ca72484c8fcf0ed_home%20-%20hero%20mobile%20\(new\).png)] lg:bg-[url(https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6227e532329aa42351839eb0_Home%20-%20hero%20qr%20code.png)] h-[75vh] md:h-[90vh] object-fill max-h-screen min-h-[550px] md:min-h-[600px] lg:min-h-[400px] bg-no-repeat bg-cover pb-16 bg-transparent w-full overflow-hidden"
+      style="
+        @media screen and (max-width: 479px) {
+          background-position: 50% 100%;
+          background-attachment: scroll;
+        }
+
+        @media screen and (max-width: 991px) {
+          background-position: 80% 100%;
+        }
+      "
+    >
+      <div class="max-w-7xl mx-auto pt-16 px-6 lg:px-0">
+        <div class="text-white font-primary max-w-lg space-y-4">
+          <h1 class="text-[33px] md:text-6xl font-extrabold leading-[1.2em]">
+            Save money and fight against food waste
+          </h1>
+          <p class="text-base md:text-lg">
+            Get massive savings on fresh food items like meat and produce that
+            are nearing their best before date at grocery stores across Canada
+            and the U.S.
+          </p>
+
+          <div class="flex items-center space-x-2 lg:space-x-4 p-1 flex-wrap">
+            <img
+              class="hover:scale-110 transition-transform cursor-pointer h-[38px]"
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/5e4dd1e309d48fb5d5f2be24_Apple%201.svg"
+              alt=""
+            />
+
+            <img
+              class="hover:scale-110 transition-transform cursor-pointer h-[38px]"
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/5e4dd1dd09d48f7b3cf2bdf4_Google%201.svg"
+              alt=""
+            />
+
+            <div
+              class="text-[#caf4e0] font-semibold hidden md:block text-lg cursor-pointer hover:text-white"
+            >
+              <span>How it works</span>
+              <span>></span>
+            </div>
+          </div>
+          <div
+            class="text-[#caf4e0] font-semibold md:hidden text-lg cursor-pointer hover:text-white"
+          >
+            <span>How it works</span>
+            <span>></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="max-w-[1440px] mx-auto shadow-xl bg-white mt-[5%] overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 place-items-center px-4 lg:px-10 py-2 lg:py-5 lg:mt-20 mx-auto"
+          id="logo-container"
+        >
+          <img
+            src="https://assets-global.website-files.com/5e596dafce8eb6216f68e410/6160917b1a8635a54d0474b5_meijer.png"
+            alt=""
+          />
+          <img
+            src="https://assets-global.website-files.com/5e596dafce8eb6216f68e410/64a5c41bf724bb41dfb7e64d_Kroger%3DColour%20Logo.png"
+            alt=""
+            sizes="(max-width: 479px) 47vw, (max-width: 767px) 29vw, (max-width: 991px) 22vw, (max-width: 1919px) 18vw, 233.6015625px"
+            srcset="
+              https://assets-global.website-files.com/5e596dafce8eb6216f68e410/64a5c41bf724bb41dfb7e64d_Kroger%3DColour%20Logo-p-500.png   500w,
+              https://assets-global.website-files.com/5e596dafce8eb6216f68e410/64a5c41bf724bb41dfb7e64d_Kroger%3DColour%20Logo-p-800.png   800w,
+              https://assets-global.website-files.com/5e596dafce8eb6216f68e410/64a5c41bf724bb41dfb7e64d_Kroger%3DColour%20Logo-p-1080.png 1080w,
+              https://assets-global.website-files.com/5e596dafce8eb6216f68e410/64a5c41bf724bb41dfb7e64d_Kroger%3DColour%20Logo.png        1449w
+            "
+          />
+          <img
+            src="https://assets-global.website-files.com/5e596dafce8eb6216f68e410/6160915588d55b4f0856ffcd_giant.png"
+            alt=""
+          />
+          <img
+            src="https://assets-global.website-files.com/5e596dafce8eb6216f68e410/61609143a31417a81a957ae4_giant-martins.png"
+            alt=""
+          />
+          <img
+            src="https://assets-global.website-files.com/5e596dafce8eb6216f68e410/6160914b792d8c1e70357323_sn-martins.png"
+            alt=""
+          />
+          <img
+            src="https://assets-global.website-files.com/5e596dafce8eb6216f68e410/6160914fbdb50d4274adf3a7_tops.png"
+            alt=""
+          />
+          <img
+            src="https://assets-global.website-files.com/5e596dafce8eb6216f68e410/61609161bc65c04d70b91fb5_familyfare.png"
+            alt=""
+          />
+          <img
+            src="https://assets-global.website-files.com/5e596dafce8eb6216f68e410/616091491da266b91553e11d_giant-eagle.png"
+            alt=""
+          />
+
+          <img
+            src="https://assets-global.website-files.com/5e596dafce8eb6216f68e410/61f9aa9bafd4220683c28567_VGs_logo7.png"
+            alt=""
+          />
+
+          <img
+            src="https://assets-global.website-files.com/5e596dafce8eb6216f68e410/6160913fbdb50d1257ade855_stop-and-shop.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex items-center justify-center">
+          <button
+            class="my-[5%] border-2 py-2 px-3 rounded-full hover:bg-gray-100"
+            id="see-more-btn"
+          >
+            see more
+          </button>
+
+          <button
+            class="hidden my-[5%] border-2 py-2 px-3 rounded-full hover:bg-gray-100"
+            id="see-less-btn"
+          >
+            see less
+          </button>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto py-5 lg:py-20">
+        <div
+          class="flex flex-col md:flex-row items-center justify-center gap-x-4 gap-y-4 lg:gap-y-0 shadow-md md:w-[90%] lg:w-2/3 p-6 mx-auto rounded-lg"
+        >
+          <span class="text-lg"
+            >Are you a grocery chain that wants to work with Flashfood?</span
+          >
+          <button
+            class="bg-[#4230dd] px-8 py-3 lg:py-5 text-white font-bold font-primary transition-shadow shadow-primary rounded-lg hover:shadow-none"
+          >
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-10 py-20">
+        <h2
+          class="heading-text text-[2.7rem] lg:text-5xl mb-5 lg:mb-0 text-center font-bold"
+        >
+          How it works
+        </h2>
+
+        <div class="md:space-y-16 lg:space-y-10">
+          <div
+            class="bg-[#f2f2ff] p-4 md:p-12 lg:p-16 pb-20 lg:pb-28 mt-10 rounded-3xl relative md:flex md:gap-x-4"
+          >
+            <img
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/61fb155d422b521236149f54_Hero%20img.png"
+              alt=""
+              class="mb-10 md:hidden"
+            />
+
+            <div>
+              <h2
+                class="text-[#06022b] text-2xl md:text-3xl font-primary font-bold lg:leading-[47px]"
+              >
+                First, use the free app to quickly and easily find discounted
+                food from wherever you are.
+              </h2>
+
+              <ul class="lg:w-[55%] pl-8 mt-5 lg:mt-0">
+                <li
+                  class="text-[#4d4d66] text-sm md:text-lg mt-2 mb-5 list-disc"
+                >
+                  Browse deals of up to 50% off at a grocery store location near
+                  you.<a
+                    class="text-[#4230dd]"
+                    href="https://www.flashfood.com/en/locations/home"
+                  >
+                    See Locations >
+                  </a>
+                </li>
+
+                <li
+                  class="text-[#4d4d66] text-sm md:text-lg mt-2 mb-5 list-disc"
+                >
+                  Choose your discounted food items.
+                </li>
+                <li
+                  class="text-[#4d4d66] text-sm md:text-lg mt-2 mb-5 list-disc"
+                >
+                  Pay right in the app using any major credit card, VISA debit
+                  card, or SNAP EBT card.
+                </li>
+              </ul>
+            </div>
+            <img
+              class="hidden md:inline-block lg:absolute lg:top-0 lg:right-[5%] max-w-[110%] h-[95%] object-contain"
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/636bdc73528dc750114b5323_ebt_homepagepic.png"
+              width="352"
+              srcset="
+                https://assets-global.website-files.com/5e4482baa13a1926b23e2187/636bdc73528dc750114b5323_ebt_homepagepic-p-500.png   500w,
+                https://assets-global.website-files.com/5e4482baa13a1926b23e2187/636bdc73528dc750114b5323_ebt_homepagepic-p-800.png   800w,
+                https://assets-global.website-files.com/5e4482baa13a1926b23e2187/636bdc73528dc750114b5323_ebt_homepagepic-p-1080.png 1080w,
+                https://assets-global.website-files.com/5e4482baa13a1926b23e2187/636bdc73528dc750114b5323_ebt_homepagepic.png        1125w
+              "
+              alt=""
+              class="image-2"
+            />
+          </div>
+
+          <div
+            class="bg-[#aaa8ff4d] flex flex-col md:flex-row items-center justify-end p-4 lg:p-16 pb-20 lg:pb-28 mt-10 rounded-3xl relative"
+          >
+            <img
+              class="h-[320px] object-contain lg:absolute lg:left-[5%]"
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/5e83642b21df556cf89a8a01_person-fridge-p-500.png"
+              alt=""
+            />
+
+            <div class="lg:w-3/5 space-y-5 p-3">
+              <h2
+                class="text-[#06022b] text-2xl lg:text-3xl font-primary font-bold lg:leading-[47px]"
+              >
+                Then, pick up your Flashfood order at the grocery store.
+              </h2>
+              <p class="text-[#4d4d66] text-[15px] lg:text-lg">
+                Head to the store, grab your food items from the Flashfood zone,
+                and quickly confirm your order with the customer service desk.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-[#f2f2ff] flex flex-col-reverse md:block p-4 lg:p-16 pb-20 lg:pb-28 mt-10 rounded-3xl relative"
+          >
+            <div>
+              <h2
+                class="font-primary text-[#06022b] text-2xl lg:text-3xl font-primary font-bold md:w-1/2 lg:leading-[47px] mb-3"
+              >
+                Finally, enjoy good food, a great deal, and the good deed - you
+                just saved some food from the landfill!
+              </h2>
+
+              <a
+                href="/"
+                class="text-[15px] lg:text-lg text-[#4230dd] font-primary"
+                >Learn more about food waste >
+              </a>
+            </div>
+
+            <img
+              class="md:absolute md:bottom-0 md:right-0 h-80 object-contain"
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/5e50882a8c34f83e2341e710_image.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto p-6 lg:p-16 pb-20">
+        <h2
+          class="text-4xl font-extrabold font-primary text-[#06022b] lg:max-w-[50%] mx-auto text-center leading-[47px]"
+        >
+          We&apos;ve helped thousands of people save money on their groceries
+        </h2>
+        <div class="space-y-10">
+          <div class="mx-4 shadow-xl p-10 pb-14 space-y-6">
+            <img
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079edaef8efe087dde4d7fd_quotation.svg"
+              alt=""
+            />
+
+            <img
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/61016f0960ab7abb8864a98e_stars.svg"
+              alt=""
+            />
+
+            <p class="text-base md:text-lg">
+              Another day and another box of fruit bought off the Flashfood app!
+              I love using this app and keeping perfectly good food from going
+              into the landfill. All of the food posted on the app is reaching
+              its best before date but still perfectly good to eat. And it was
+              only $5.00! 😊
+            </p>
+
+            <p
+              class="text-[#1c1279] text-sm md:text-base font-extrabold font-primary"
+            >
+              @ACELIACSTRAVELS FROM AIRDRIE, ALBERTA
+            </p>
+          </div>
+
+          <div class="mx-4 shadow-xl p-10 pb-14 space-y-6">
+            <img
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079edaef8efe087dde4d7fd_quotation.svg"
+              alt=""
+            />
+
+            <img
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/61016f0960ab7abb8864a98e_stars.svg"
+              alt=""
+            />
+
+            <p class="text-base md:text-lg">
+              I despise wasting food, and I love getting a great deal. flashfood
+              makes it so simple for me to actually save food destined for the
+              dump, and all they ask is that I pay a fraction of the price for
+              it. In my personal opinion, the food is fine! No issues
+              whatsoever! In what world does this service not make perfect
+              sense?
+            </p>
+
+            <p
+              class="text-[#1c1279] text-sm md:text-md font-extrabold font-primary"
+            >
+              PETER T. FROM TORONTO
+            </p>
+          </div>
+
+          <div class="mx-4 shadow-xl p-10 pb-14 space-y-6">
+            <img
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079edaef8efe087dde4d7fd_quotation.svg"
+              alt=""
+            />
+
+            <img
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/61016f0960ab7abb8864a98e_stars.svg"
+              alt=""
+            />
+
+            <p class="text-base md:text-lg">
+              Wow! I am absolutely delighted with my first box! A great
+              selection of produce (carrots, English cucumber, peppers,
+              mushrooms, onions, apples, oranges and the protein kielbasa,
+              chicken meatballs, teriyaki chicken meatballs, pulled chicken) was
+              awesome as well! Will most certainly order again!
+            </p>
+
+            <p
+              class="text-[#1c1279] text-sm lg:text-md font-extrabold font-primary"
+            >
+              PAULINE P. FROM WYANDOTTE, MICHIGAN
+            </p>
+          </div>
+
+          <div class="mx-4 shadow-xl p-10 pb-14 space-y-6">
+            <img
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079edaef8efe087dde4d7fd_quotation.svg"
+              alt=""
+            />
+
+            <img
+              src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/61016f0960ab7abb8864a98e_stars.svg"
+              alt=""
+            />
+
+            <p class="text-base md:text-lg">
+              Love it. between the wife and I who have the app on both our
+              phones, we saved over $1200. instead of stores throwing out
+              expired food to the dump, they can get rid of food when it's close
+              to expiration dates. love it. I highly recommend it.
+            </p>
+
+            <p
+              class="text-[#1c1279] text-sm lg:text-md font-extrabold font-primary"
+            >
+              BRETT C. FROM AJAX
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-[#4230dd] font-primary bg-no-repeat bg-cover overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center px-4 py-6">
+          <div class="space-y-4 lg:space-y-0">
+            <h4 class="text-[#caf4e0] text-xl md:text-2xl">ARE YOU READY?</h4>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white">
+              Download the free app and save money on groceries now
+            </h2>
+            <div class="flex items-center space-x-4 p-1 mt-4 md:mt-0">
+              <img
+                class="hover:scale-110 transition-transform cursor-pointer h-[38px]"
+                src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/5e4dd1e309d48fb5d5f2be24_Apple%201.svg"
+                alt=""
+              />
+
+              <img
+                class="hover:scale-110 transition-transform cursor-pointer h-[38px]"
+                src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/5e4dd1dd09d48f7b3cf2bdf4_Google%201.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <img
+            src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/607f342e86767b926943b932_flashfood-phone-cta-sfw.jpg"
+            sizes="(max-width: 479px) 470px, (max-width: 767px) 670px, (max-width: 991px) 100vw, 670px"
+            srcset="
+              https://assets-global.website-files.com/5e4482baa13a1926b23e2187/607f342e86767b926943b932_flashfood-phone-cta-sfw-p-500.jpeg   500w,
+              https://assets-global.website-files.com/5e4482baa13a1926b23e2187/607f342e86767b926943b932_flashfood-phone-cta-sfw-p-800.jpeg   800w,
+              https://assets-global.website-files.com/5e4482baa13a1926b23e2187/607f342e86767b926943b932_flashfood-phone-cta-sfw-p-1080.jpeg 1080w,
+              https://assets-global.website-files.com/5e4482baa13a1926b23e2187/607f342e86767b926943b932_flashfood-phone-cta-sfw.jpg         1532w
+            "
+            alt="Hand holding phone with Flashfood app showing boneless chicken breast discounted to $4.20 from original $8.54 price"
+            class="hidden lg:inline"
+          />
+        </div>
+      </div>
+      <img
+        src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079f749733e292a82fae3ae_footer-dark-wave.png"
+        loading="eager"
+        sizes="100vw"
+        srcset="
+          https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079f749733e292a82fae3ae_footer-dark-wave-p-500.png   500w,
+          https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079f749733e292a82fae3ae_footer-dark-wave-p-800.png   800w,
+          https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079f749733e292a82fae3ae_footer-dark-wave-p-1080.png 1080w,
+          https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079f749733e292a82fae3ae_footer-dark-wave-p-1600.png 1600w,
+          https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079f749733e292a82fae3ae_footer-dark-wave-p-2000.png 2000w,
+          https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079f749733e292a82fae3ae_footer-dark-wave.png        3320w
+        "
+        alt=""
+        class="image-84"
+      />
+    </section>
+
+    <footer class="bg-[#06022b] p-5 lg:p-10 overflow-hidden">
+      <div class="max-w-7xl mx-auto lg:p-10">
+        <div class="text-right mx-8 lg:mx-11 my-4">
+          <a href="#" class="text-white text-base font-primary font-bold"
+            >FOLLOW @FLASHFOOD</a
+          >
+        </div>
+        <div
+          class="flex flex-wrap items-center gap-1 lg:gap-x-4 justify-center relative z-10"
+        >
+          <img
+            src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079b4bf46b89d3095d43c44_%40buffalofooood.jpg"
+            loading="lazy"
+            alt="A young woman smiling holding up her Flashfood haul which includes various fruits, spinach, bagels, hummus and cheese"
+            class="rounded-sm h-32 lg:h-52"
+          />
+          <img
+            src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079b4cc2af973049f73bfe1_%40detroitfather.jpg"
+            loading="lazy"
+            alt="A young woman smiling holding up her Flashfood haul which includes various fruits, spinach, bagels, hummus and cheese"
+            class="rounded-sm h-32 lg:h-52"
+          />
+          <img
+            src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079b4dd83b02737a2ce6ea9_%40shoshana.jpg"
+            loading="lazy"
+            alt="A young woman smiling holding up her Flashfood haul which includes various fruits, spinach, bagels, hummus and cheese"
+            class="rounded-sm h-32 lg:h-52"
+          />
+          <img
+            src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079b4e8f8596474f6a68911_%40thefunemployedfamily.jpg"
+            loading="lazy"
+            alt="A young woman smiling holding up her Flashfood haul which includes various fruits, spinach, bagels, hummus and cheese"
+            class="rounded-sm h-32 lg:h-52"
+          />
+          <img
+            src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079b50f16c3352a86643dba_%40undeniableannie.jpg"
+            loading="lazy"
+            alt="A young woman smiling holding up her Flashfood haul which includes various fruits, spinach, bagels, hummus and cheese"
+            class="rounded-sm h-32 lg:h-52"
+          />
+          <img
+            src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079b50f16c3352a86643dba_%40undeniableannie.jpg"
+            loading="lazy"
+            alt="A young woman smiling holding up her Flashfood haul which includes various fruits, spinach, bagels, hummus and cheese"
+            class="rounded-sm h-32 lg:h-52 md:hidden"
+          />
+        </div>
+
+        <div class="relative">
+          <div
+            class="grid grid-cols-2 md:grid-cols-5 lg:gap-2 gap-6 py-10 md:pl-10 mt-10 z-10 relative"
+          >
+            <div class="space-y-6 col-span-2 md:col-span-1 w-[70%] md:w-auto">
+              <img
+                src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079a3e353127e9a9a60b0e2_flashfood-app-icon.svg"
+                alt=""
+              />
+
+              <h3
+                class="text-[26px] md:text-[23px] lg:text-[32px] leading-10 font-bold text-white"
+              >
+                Find Flashfood near you ->
+              </h3>
+
+              <div class="flex items-center gap-x-4">
+                <img
+                  src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079eac5223122b8ffa160df_insta-mint.svg"
+                  alt=""
+                  class="h-6"
+                />
+
+                <img
+                  src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079eac56256cf0580a0319d_fb-mint.svg"
+                  alt=""
+                  class="h-6"
+                />
+
+                <img
+                  src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079eac5d03463ecbdc7a983_twitter-mint.svg"
+                  alt=""
+                  class="h-6"
+                />
+              </div>
+            </div>
+            <div
+              class="text-sm lg:text-base font-bold text-white font-primary mt-6 md:ml-8 lg:ml-20"
+            >
+              <ul class="space-y-8">
+                <li>THE TEAM</li>
+                <li>LOCATIONS</li>
+                <li>OUR STORY</li>
+                <li>FOOD WASTE</li>
+              </ul>
+            </div>
+            <div
+              class="text-sm lg:text-base font-bold text-white font-primary mt-6 md:ml-8 lg:ml-20"
+            >
+              <ul class="space-y-8">
+                <li>NEWS</li>
+                <li>BLOG</li>
+                <li>REFER A FRIEND</li>
+              </ul>
+            </div>
+            <div
+              class="text-sm lg:text-base font-bold text-white font-primary mt-6 md:ml-8 lg:ml-20"
+            >
+              <ul class="space-y-8">
+                <li>PARTNER</li>
+                <li>CAREERS</li>
+                <li>SUPPORT</li>
+                <li>CONTACT</li>
+              </ul>
+            </div>
+            <div
+              class="text-sm lg:text-base font-bold text-white font-primary mt-6 md:ml-8 lg:ml-20"
+            >
+              <ul class="space-y-8">
+                <li>TERMS OF USE</li>
+                <li>PRIVACY POLICY</li>
+                <li>SUPPLIER DIVERSITY POLICY</li>
+                <li>RESPONSIBLE DISCLOUSE</li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079e923d03463f1d7c7a1c8_footer-blob.svg"
+            class="absolute -top-20 -left-5"
+            alt=""
+          />
+        </div>
+
+        <p class="mt-10 mb-20 md:my-12 text-right text-[#f2f2ff9e] text-lg">
+          &copy; Flashfood Inc. 2023. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="twConfig.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
