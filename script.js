@@ -5,6 +5,10 @@ const navbarWrapper = document.getElementById("navbar-wrapper");
 const navbar = document.getElementById("navbar");
 const aboutMenuBtn = document.getElementById("about-menu-toggle");
 const dropdownMenu = document.getElementById("drop-down-menu");
+const mobileNavBtn = document.getElementById("mobile-nav-btn");
+const mobileNavMenu = document.getElementById("mobile-nav-menu");
+const mobileAbtBtn = document.getElementById("mobile-about-btn");
+const mobileAbtDropdown = document.getElementById("mobile-about-dropdown-menu");
 
 const additionalLogoImages = [
   "https://assets-global.website-files.com/5e596dafce8eb6216f68e410/616091839ed0e5299124e203_loblaws.png",
@@ -61,6 +65,22 @@ aboutMenuBtn.addEventListener("mouseenter", () => {
 
 aboutMenuBtn.addEventListener("mouseleave", () => {
   dropdownMenu.classList.replace("flex", "hidden");
+});
+
+mobileNavBtn.addEventListener("click", () => {
+  if (mobileNavMenu.classList.contains("flex")) {
+    mobileNavMenu.classList.replace("flex", "hidden");
+  } else {
+    mobileNavMenu.classList.replace("hidden", "flex");
+  }
+});
+
+mobileAbtBtn.addEventListener("click", () => {
+  if (mobileAbtDropdown.classList.contains("flex")) {
+    mobileAbtDropdown.classList.replace("flex", "hidden");
+  } else {
+    mobileAbtDropdown.classList.replace("hidden", "flex");
+  }
 });
 
 window.addEventListener("scroll", () => {

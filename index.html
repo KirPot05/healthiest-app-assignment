@@ -94,13 +94,57 @@
             Download
           </button>
 
-          <div class="flex flex-col items-center gap-y-[3px]">
+          <!-- <div class="flex flex-col items-center gap-y-[3px]">
             <span class="block bg-white h-[3px] w-4"></span>
             <span class="block bg-white h-[3px] w-4"></span>
             <span class="block bg-white h-[3px] w-4"></span>
-          </div>
+          </div> -->
+
+          <span
+            class="material-icons text-white font-semibold"
+            role="button"
+            id="mobile-nav-btn"
+            >menu</span
+          >
         </div>
       </nav>
+
+      <div
+        class="absolute bg-[#4230DD] hidden text-[#caf4e0] uppercase hover:text-white transition-all flex-col gap-y-4 top-full right-0 p-3 text-sm font-primary font-extrabold"
+        id="mobile-nav-menu"
+      >
+        <a href="#" class="p-1">How it works</a>
+        <a href="#" class="p-1">Locations</a>
+        <div>
+          <div
+            class="flex items-center justify-between"
+            role="button"
+            tabindex="0"
+            id="mobile-about-btn"
+          >
+            <a href="#" class="p-1">About</a>
+            <span class="material-icons"> expand_more </span>
+          </div>
+          <div
+            class="hidden flex-col gap-y-3 my-2 p-2"
+            id="mobile-about-dropdown-menu"
+          >
+            <span>OUR STORY</span>
+            <span>FOOD WASTE</span>
+            <span>THE TEAM</span>
+            <span>PRESS ROOM</span>
+            <span>IMPACT REPORT</span>
+          </div>
+        </div>
+        <a href="#" class="p-1">Support</a>
+        <a href="#" class="p-1">Partner</a>
+        <button
+          type="button"
+          class="py-3 px-8 rounded-lg text-[#4230dd] bg-[#caf4e0] shadow-primary hover:shadow-none transition-shadow"
+        >
+          DOWNLOAD
+        </button>
+      </div>
     </header>
 
     <section
